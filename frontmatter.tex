@@ -1,0 +1,51 @@
+% Title Page
+\begin{titlepage}
+  \thispagestyle{empty}
+  \centering
+  \vspace*{\fill}
+  {\LARGE \textbf{\expandafter{\reporttitleI}}}
+  \vfill
+  {\scshape by}\\
+  {\large \expandafter{\myname}}\\
+  \vfill
+  {\scshape a report submitted to}\\
+  \textbf{The Department of Data Science, Analytics, and Artificial Intelligence}\\
+  {\scshape in partial fulfilment of the requirements for the degree of}\\
+  \textbf{Doctor of Philosophy}\\
+  {\scshape in}\\
+  \textbf{Data Science, Analytics, and Artificial Intelligence}
+  \vfill
+  {\large Carleton University}\\
+  {\large Ottawa, Ontario, Canada}
+  \vfill
+  {\large \textcopyright{} \the\year{}}\\
+  {\large \expandafter{\myname}}
+\end{titlepage}
+
+\clearpage
+
+% Info Page
+\setcounter{page}{2}
+\noindent
+
+\vspace*{\fill}
+
+\begin{tabular}{l l}
+  SUPERVISOR:      &Dr. Joe Mama\\[5mm]
+  NUMBER OF PAGES: &\pageref*{endfrontmatter}, \pageref*{LastPage}
+\end{tabular}
+
+\vfill
+
+\clearpage
+
+\pdfbookmark{Contents}{Contents}
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\listofalgorithms
+
+\label{endfrontmatter} % For automatic counting of pages
