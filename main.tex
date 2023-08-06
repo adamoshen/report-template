@@ -1,0 +1,34 @@
+\documentclass[12pt,letterpaper]{report}
+
+\usepackage{CU-report}
+\addbibresource{bibliography.bib}
+\graphicspath{{./img/}} % Change as necessary
+
+\newcommand{\reporttitleI}{It's Just A Report}
+\newcommand{\myname}{Adam Shen}
+
+\begin{document}
+
+% To get list of algorithms into the TOC - from `algorithms` documentation
+\renewcommand{\listofalgorithms}{\begingroup
+	\tocfile{List of Algorithms}{loa}
+\endgroup}
+
+\makeatletter
+\let\l@algorithm\l@figure
+\makeatother
+
+% Compile specified chapters only
+%\includeonly{ch0-frontmatter,ch1-introduction}
+
+\pagenumbering{roman}
+
+\include{frontmatter}
+
+\pagenumbering{arabic}
+
+\include{ch1}
+
+\include{ch2}
+
+\end{document}
