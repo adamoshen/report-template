@@ -113,9 +113,11 @@ P(z_{i}=k\,|\,\mathbf{z}_{(i)},\,\textbf{B}) \,\propto\, (n_{(i),\,k} + \alpha)
 \label{eqn:btm_phi}
 \end{equation}
 
-\lipsum[14] Go and re-read \autoref{alg:btm}!
+\lipsum[14] Go and re-read \autoref{alg:btm}! I just realized I added LDA to the bib but didn't
+cite it\supercite{lda}.
 
-\printbibliography[heading=subbibintoc,title={Cited}]
+\printbibliography[heading=subbibintoc,title={Cited},keyword={cited}]
 
-\printbibliography[heading=subbibintoc,title={Not cited}]
-\nocite{tidytext}
+\nocite{*}
+\printbibliography[heading=subbibintoc,title={Not cited},keyword={uncited}]
+
