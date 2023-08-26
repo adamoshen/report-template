@@ -42,3 +42,9 @@
 % Miscellaneous optional stuff
 \newcommand{\ttt}[1]{\texttt{#1}}
 \newcommand{\blue}[1]{{\color{blue}#1}}
+
+\DeclareFieldFormat{addendum}{%
+  \begin{singlespace}
+    \footnotesize \textcolor{red}{Justification for inclusion:} #1%
+  \end{singlespace}%
+  \nopunct}
