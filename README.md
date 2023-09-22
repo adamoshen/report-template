@@ -7,6 +7,8 @@ A (Xe)Latex report template based on my
 
 - Ensure that your `main.tex` includes `\usepackage{CU-report}`
 - Modify the `CU-thesis.sty` file to your liking
+- Superscript style citations are performed using `\supercite{item}`
+(`thesis-template` used `\citep{item}`).
 
 This report uses the `biblatex` package for citations, whereas the `thesis-template` used `natbib`.
 The `biblatex` package comes with options to mimic the citation style of `natbib`, which have been
